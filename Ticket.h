@@ -7,8 +7,11 @@ public:
 	Ticket();
 	~Ticket();
 
-	std::string getAttractionName();
-	double getTicketPrice();
+	std::string getAttractionName() const;
+	double getTicketPrice() const;
+
+	void setAttractionName(const std::string attractionName);
+	void setPrice(const double price);
 
 private:
 	std::string attractionName;
